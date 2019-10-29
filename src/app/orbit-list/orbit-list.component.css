@@ -3,9 +3,6 @@
     color: #dd5;
 }
 
-.warning {
-    background-color: #da8a8a;
-}
 
 table {
   color: #111;
@@ -28,9 +25,13 @@ th, td {
 }
 
 .even {
-    background-color: rgb(78, 104, 9);
+    background-color: limegreen;
 }
 
 .odd {
     background-color: rgb(163, 152, 152);
+}
+
+.warning {
+    background-color: #da8a8a;
 }
