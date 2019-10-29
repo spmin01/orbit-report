@@ -15,6 +15,7 @@ export class AppComponent {
   constructor() {
     this.sourceList = [];
     this.displayList = [];
+    
     let satellitesUrl = 'https://handlers.education.launchcode.org/static/satellites.json';
 
     window.fetch(satellitesUrl).then(function (response) {
@@ -23,8 +24,8 @@ export class AppComponent {
           let newSatellite = new Satellite(data.satellites[i].name, data.satellites[i].type, data.satellites[i].launchDate, data.satellites[i].orbitType, data.satellites[i].operational);
           this.sourceList.push(newSatellite);
 
-          this.displayList = this.sourceList.slice(0);
         }
+        this.displayList = this.sourceList.slice(0);
       }.bind(this));
     }.bind(this));
   }

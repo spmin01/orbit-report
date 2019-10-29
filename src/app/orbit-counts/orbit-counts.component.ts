@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Satellite } from '../satellite';
 
 @Component({
   selector: 'app-orbit-counts',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OrbitCountsComponent implements OnInit {
 
+  @Input() satellites: Satellite[];
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  getSatelliteCount(type: string): number {
+    return this.satellites.filter(satellite => satellite.type === type).length;
   }
 
 }
