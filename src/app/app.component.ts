@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { Satellite } from './satellite';
 import { SourceListMap } from 'source-list-map';
-import { type } from 'os';
 
 @Component({
   selector: 'app-root',
