@@ -9,7 +9,7 @@
     </tr>
     <tr [class.warning]="satellite.shouldShowWarning()" [class.even]="satellites.indexOf(satellite) % 2 === 0" [class.odd]="satellites.indexOf(satellite) % 2 === 1" *ngFor="let satellite of satellites">
         <th>{{satellite.name}}</th>
-        <th >{{satellite.type}}</th>
+        <th>{{satellite.type}}</th>
         <th>{{satellite.operational}}</th>
         <th>{{satellite.orbitType}}</th>
         <th>{{satellite.launchDate}}</th>
